@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #e0f7ff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/*  HEADER */
+header {
+  text-align: center;
+  padding: 30px;
+  background: white;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #ffb6c1;
+}
+
+/*  SECTIONS */
+section {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/*  TITLES */
+h1 {
+  color: #ff69b4;
+}
+
+h2 {
+  color: #6a5acd;
+}
+
+#skills {
+  text-align: center;
+}
+
+.skill {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.skill p {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #6a5acd;
+}
+
+/*  background bar */
+.bar {
+  width: 100%;
+  background: #f0f0f0;
+  height: 12px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/*  animated progress */
+.progress {
+  width: 0;
+  height: 14px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4, #a18cd1);
+  transition: width 1s ease-in-out;
+} 
+
+/*  LINKS */
+a {
+  color: #ff69b4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.edu-item {
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .card {
+    margin: 10px 0;
+  }
+}
+
+#contact {
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 8px rgba(255, 105, 180, 0.3);
+}
+
+.input-box textarea {
+  height: 120px;
+  resize: none;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#error {
+  font-weight: bold;
+}
